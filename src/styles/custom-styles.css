@@ -1,0 +1,62 @@
+button {
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 20px;
+    padding: 0.75rem 2rem;
+    border-radius: 0.35rem;
+    transition: all 0.25s linear ;
+}
+
+/* Fill - Main Green Button */
+.button-fill-green {
+    background-color: var(--main-color-green);
+    color: var(--main-white);
+}
+
+.button-fill-green:hover {
+    background-color: var(--sec-color-green);
+    transform: scale(0.95);
+}
+
+
+/* Fill - Main Black Button */
+.button-fill-dark {
+    background-color: var(--main-black);
+    color: var(--main-white);
+}
+
+.button-fill-dark:hover {
+    background-color: #000;
+    transform: scale(0.95);
+}
+
+
+/* Border - Main Green Button */
+.button-border-green {
+    background-color: var(--main-white);
+    outline: 1px solid var(--main-color-green);
+    color: var(--main-color-green);
+}
+
+.button-border-green:hover {
+    background-color: var(--main-color-green);
+    outline: none;
+    color: var(--main-white);
+    transform: scale(0.95);
+}
+
+/* Border - Main Black Button */
+.button-border-dark {
+    background-color: var(--main-white);
+    outline: 1px solid var(--main-black);
+    color: var(--main-black);
+}
+
+.button-border-dark:hover {
+    background-color: var(--main-black);
+    outline: none;
+    color: var(--main-white);
+    transform: scale(0.95);
+}
