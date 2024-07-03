@@ -1,5 +1,5 @@
 import React from "react";
-import imgProfile from "../assets/dan-img.png";
+import imgProfile from "../assets/dan-img-2.png";
 
 const facebookLink = "https://www.facebook.com/dhone.m.calibuyot/";
 const linkedinLink = "https://www.linkedin.com/in/dhone-matthews-calibuyot-1ba83b286";
