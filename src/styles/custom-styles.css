@@ -1,0 +1,42 @@
+button {
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 20px;
+    padding: 0.75rem 2rem;
+    border-radius: 0.35rem;
+    transition: all 0.15s linear ;
+}
+
+/* Fill - Main Green Button */
+.button-fill-green {
+    background-color: var(--main-color-green);
+    color: var(--main-white);
+}
+
+.button-fill-green:hover {
+    background-color: var(--sec-color-green);
+    transform: scale(1.1);
+}
+
+.button-fill-green:active {
+    background-color: var(--sec-color-green);
+    transform: scale(0.95);
+}
+
+/* Fill - Main Black Button */
+.button-fill-dark {
+    background-color: var(--main-black);
+    color: var(--main-white);
+}
+
+.button-fill-dark:hover {
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+.button-fill-dark:active {
+    background-color: #000;
+    transform: scale(0.95);
+}

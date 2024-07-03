@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+    --main-color-green: #35a29f;
+    --sec-color-green: #0b666a;
+    --main-black: #363636;
+    --main-white: #f7f9f2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headings {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sub-headings {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.75rem;
 }
 
-.App-link {
-  color: #61dafb;
+.normal-text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--main-white);
+}
+
+
+/* NavBar Component */
+.navbar {
+    height: 5rem;
+}
+
+.nav-icon {
+    height: 1.7rem;
+    width: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-icon:hover {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+.navbar-link {
+    color: var(--main-black);
+    font-weight: 700;
+    font-size: 1rem;
+    transition: 0.25s ease-in-out;
+}
+
+.navbar-link:hover {
+    color: var(--main-color-green);
+}
+
+
+/* Hero Component */
+.hero-img {
+  height: 27rem;
+  width: auto;
+  animation: scaleUpDown 25s infinite;
+  transition: all 0.20s linear;
+}
+
+.hero-img:hover {
+  transform: scale(1.1);
+}
+
+.hero-icons > a > i {
+  color: var(--sec-color-green);
+  font-size: 1.5rem;
+  transition: all 0.25s linear;
+}
+
+.hero-icons > a > i:hover {
+  color: var(--main-black);
+}
+
+.hero-name {
+  color: var(--main-color-green);
+}
+
+.hero-cont {
+  padding: 0 10rem;
 }
