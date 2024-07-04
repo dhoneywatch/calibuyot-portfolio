@@ -11,22 +11,38 @@
     --main-white: #f7f9f2;
 }
 
+#root {
+    padding-top: 4.5rem;
+}
+
 .headings {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 3rem;
 }
 
+.title-headings {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 .sub-headings {
     font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 1.75rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.sub-sub-headings {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .normal-text {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 a {
@@ -37,10 +53,14 @@ body {
     background-color: var(--main-white);
 }
 
-
 /* NavBar Component */
 .navbar {
-    height: 5rem;
+    background-color: #f7f9f280 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .nav-icon {
@@ -64,33 +84,149 @@ body {
     color: var(--main-color-green);
 }
 
-
 /* Hero Component */
 .hero-img {
-  height: 27rem;
-  width: auto;
-  animation: scaleUpDown 25s infinite;
-  transition: all 0.20s linear;
+    height: 27rem;
+    width: auto;
+    transition: all 0.2s linear;
 }
 
 .hero-img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-.hero-icons > a > i {
-  color: var(--sec-color-green);
-  font-size: 1.5rem;
-  transition: all 0.25s linear;
+.hero-icons > i {
+    color: var(--sec-color-green);
+    font-size: 1.5rem;
+    transition: all 0.25s linear;
 }
 
-.hero-icons > a > i:hover {
-  color: var(--main-black);
+.hero-icons > i:hover {
+    color: var(--main-black);
 }
 
 .hero-name {
-  color: var(--main-color-green);
+    color: var(--main-color-green);
 }
 
 .hero-cont {
-  padding: 0 10rem;
+    padding: 0 10rem;
+}
+
+/* About Component */
+.about-wrapper {
+    background-color: var(--main-black);
+}
+
+.about-headings {
+    color: var(--main-color-green);
+}
+
+.about-title {
+    color: var(--main-color-green);
+}
+
+.about-subheadings {
+    color: var(--main-color-green);
+}
+
+.about-subsubheadings {
+    color: var(--main-white);
+}
+
+.about-text {
+    color: var(--main-white);
+}
+
+.educ-cont {
+    padding: 0 10rem;
+}
+
+.educ-details {
+    border: 1px solid var(--main-white);
+    padding: 1rem;
+}
+
+.educ-title-cont {
+    background-color: var(--main-white);
+}
+
+.educ-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--main-black);
+    margin-bottom: 0;
+}
+
+/* Skills Component */
+.skill-cont {
+    width: 9rem;
+    border-radius: 1.25rem;
+    transition: all 0.2s linear;
+    background: linear-gradient(135deg, #f7f9f210, #f7f9f200);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid #f7f9f218;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.37); 
+}
+
+.skill-icon > i {
+    font-size: 3rem;
+    color: var(--main-color-green);
+}
+
+.skill-title {
+    color: var(--main-white);
+}
+
+.skill-headings {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.skill-section {
+    color: var(--main-white);
+}
+
+.skill-cont:hover {
+    transform: scale(1.05);
+    background-color: var(--main-white); 
+}
+
+.skill-cont:hover > .skill-title {
+    color: var(--main-black);
+}
+
+.skill-wrapper {
+    width: inherit;
+    border-bottom: 1px solid var(--main-white);
+    border-radius: 1rem;
+}
+
+/* Custom Responsiveness */
+@media only screen and (max-width: 378px) {
+    .headings {
+        font-size: 2.5rem;
+    }
+
+    .sub-headings {
+        font-size: 1.25rem;
+    }
+
+    .normal-text {
+        font-size: 0.90rem;
+    }
+
+    .hero-img {
+        height: 21rem;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .educ-cont {
+        padding: 0rem;
+    }
 }

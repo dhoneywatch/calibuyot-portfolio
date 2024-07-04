@@ -1,12 +1,16 @@
-button {
+.button {
     border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 0.35rem;
+    transition: all 0.15s linear ;
+}
+
+.button-text {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 0.85rem;
     line-height: 20px;
-    padding: 0.75rem 2rem;
-    border-radius: 0.35rem;
-    transition: all 0.15s linear ;
+    margin: 0;
 }
 
 /* Fill - Main Green Button */
@@ -22,7 +26,7 @@ button {
 
 .button-fill-green:active {
     background-color: var(--sec-color-green);
-    transform: scale(0.95);
+    transform: scale(0.99);
 }
 
 /* Fill - Main Black Button */
@@ -38,5 +42,59 @@ button {
 
 .button-fill-dark:active {
     background-color: #000;
+    transform: scale(0.99);
+}
+
+/* Tabs */
+.tab-cont {
+    width: max-content;
+    border-bottom: 1px solid var(--main-white);
+}
+
+.tab-button {
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.85rem;
+    text-align: center;
+    color: var(--main-white);
+    background-color: var(--main-black);
+    padding: 0.5rem 0rem;
+    width: 10rem;
+    transition: all 0.25s linear;
+}
+
+.tab-button:hover {
+    background-color: #f7f9f280;
+}
+
+.tab-button:active {
+    background-color: #f7f9f280;
     transform: scale(0.95);
+}
+
+.tab-button-active {
+    background-color: var(--main-white);
+    color: var(--main-black);
+    font-weight: 700;
+}
+
+.tab-button-active:hover {
+    background-color: var(--main-white);
+    color: var(--main-black);
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 576px) {
+    .tab-button {
+        width: 6rem;
+        font-size: 0.80rem;
+    }
+}
+
+@media only screen and (max-width: 378px) {
+    .tab-button {
+        width: 5rem;
+        font-size: 0.70rem;
+    }
 }
