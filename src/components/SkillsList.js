@@ -66,7 +66,7 @@ const skills = [
 
 const SkillsList = () => {
     return (
-        <div className="container d-flex flex-column align-items-start justify-items-center">
+        <div className="container d-flex flex-column align-items-start justify-items-center pt-5 mt-5">
             <div className="pb-5 skill-wrapper">
                 <h1 className="title-headings skill-section text-center">Frontend Tools</h1>
                 <div className="d-flex justify-content-center align-items-center gap-4 flex-wrap">

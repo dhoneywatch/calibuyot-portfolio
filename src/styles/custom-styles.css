@@ -2,7 +2,7 @@
     border: none;
     padding: 0.75rem 1rem;
     border-radius: 0.35rem;
-    transition: all 0.15s linear ;
+    transition: all 0.15s linear;
 }
 
 .button-text {
@@ -85,16 +85,180 @@
     font-weight: 700;
 }
 
+/* Timeline */
+.timeline {
+    margin: 0 auto;
+    max-width: 24rem;
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 0.15rem;
+    background-color: var(--main-white);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+
+.checkpoint {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+    width: 75%;
+}
+
+.checkpoint:nth-child(odd) {
+    left: -40%;
+}
+
+.checkpoint:nth-child(even) {
+    left: 65%;
+}
+
+.checkpoint:nth-child(odd)::after,
+.checkpoint:nth-child(even)::after {
+    content: "";
+    background: var(--main-white);
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 4px solid var(--main-color-green);
+}
+
+.checkpoint:nth-child(odd)::after {
+    right: -4.45rem;
+}
+
+.checkpoint:nth-child(even)::after {
+    left: -4.25rem;
+}
+
+.checkpoint div {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg, #f7f9f210, #f7f9f200);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid #f7f9f218;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.37);
+}
+
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before {
+    content: "";
+    background-color: var(--main-color-green);
+    width: 3rem;
+    height: 0.15rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkpoint:nth-child(odd)::before {
+    right: -3rem;
+}
+
+.checkpoint:nth-child(even)::before {
+    left: -3rem;
+}
+
+.checkpoint-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--main-color-green);
+}
+
+.checkpoint-company {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--main-color-green);
+}
+
+.checkpoint-date {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: var(--main-color-green);
+}
+
+.checkpoint-description {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: var(--main-white);
+}
+
+@media screen and (max-width: 768px) {
+    .timeline::before {
+        left: 10%;
+    }
+
+    .checkpoint:nth-child(odd) {
+        left: 25%;
+    }
+
+    .checkpoint:nth-child(even) {
+        left: 25%;
+    }
+
+    .checkpoint:nth-child(odd)::before {
+        right: unset;
+        left: -3rem;
+    }
+
+    .checkpoint:nth-child(odd)::after {
+        right: unset;
+        left: -4.25rem;
+    }
+}
+
 @media only screen and (max-width: 576px) {
     .tab-button {
         width: 6rem;
-        font-size: 0.80rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .timeline::before {
+        left: 50%;
+    }
+
+    .checkpoint:nth-child(odd) {
+        left: 13%;
+    }
+
+    .checkpoint:nth-child(even) {
+        left: 13%;
+    }
+
+    .checkpoint:nth-child(odd)::before {
+        display: none;
+    }
+    
+    .checkpoint:nth-child(even)::before {
+        display: none;
+    }
+
+    .checkpoint:nth-child(odd)::after {
+        display: none;
+    }
+
+    .checkpoint:nth-child(even)::after {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 378px) {
     .tab-button {
         width: 5rem;
-        font-size: 0.70rem;
+        font-size: 0.7rem;
     }
 }
