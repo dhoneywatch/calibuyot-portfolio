@@ -1,9 +1,29 @@
 import React from "react";
 import coloredLogo from "../assets/logo-colored.png";
+import HeaderLinks from "./HeaderLink";
+
+const navLinks = [
+    {
+        title: "Home",
+        link: "#home",
+    },
+    {
+        title: "About",
+        link: "#about",
+    },
+    {
+        title: "Projects",
+        link: "#projects",
+    },
+    {
+        title: "Contact",
+        link: "#contact",
+    },
+];
 
 const Header = () => {
     return (
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img
@@ -23,37 +43,18 @@ const Header = () => {
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav gap-1 gap-lg-3 text-end">
-                        <li class="nav-item">
-                            <a
-                                class="nav-link navbar-link"
-                                aria-current="page"
-                                href="#"
-                            >
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar-link" href="#">
-                                About
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar-link" href="#">
-                                Skills
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar-link" href="#">
-                                Projects
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar-link" href="#">
-                                Contact
-                            </a>
-                        </li>
+                <div
+                    class="collapse navbar-collapse justify-content-end"
+                    id="navbarNav"
+                >
+                    <ul class="navbar-nav gap-1 gap-lg-3 text-center">
+                        {navLinks.map((nav, index) => {
+                            return (
+                                <li className="nav-item" key={index}>
+                                    <HeaderLinks navLink={nav.link} title={nav.title} />
+                                </li>
+                            );
+                        })}
                     </ul>
                 </div>
             </div>
