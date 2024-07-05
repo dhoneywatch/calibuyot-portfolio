@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Tab from "./Tab";
 import Education from "./Education";
 import SkillsList from "./SkillsList";
+import ExperienceTimeline from "./ExperienceTimeline";
 
 const About = () => {
     const tabs = ["Education", "Skills", "Experience"];
@@ -24,7 +25,7 @@ const About = () => {
             case "Skills":
                 return <SkillsList />;
             case "Experience":
-                return <div>Experience Tab</div>;
+                return <ExperienceTimeline />;
             default:
                 return <div>Education Tab</div>;
         }
@@ -52,7 +53,7 @@ const About = () => {
                         })}
                     </div>
                 </div>
-                <div className="pt-5 mt-5">
+                <div className="">
                     <div className="container">
                         {displayAboutContent(tabActive)}
                     </div>

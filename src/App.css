@@ -206,6 +206,12 @@ body {
 }
 
 /* Custom Responsiveness */
+@media only screen and (max-width: 992px) {
+    .educ-cont {
+        padding: 0rem;
+    }
+}
+
 @media only screen and (max-width: 378px) {
     .headings {
         font-size: 2.5rem;
@@ -222,11 +228,5 @@ body {
     .hero-img {
         height: 21rem;
         width: auto;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .educ-cont {
-        padding: 0rem;
     }
 }
