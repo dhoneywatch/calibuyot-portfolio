@@ -66,52 +66,52 @@ const skills = [
 
 const SkillsList = () => {
     return (
-        <div className="container d-flex flex-column align-items-start justify-items-center pt-5 mt-5">
+        <div className="container d-flex flex-column align-items-start justify-items-center py-5 mt-5">
             <div className="pb-5 skill-wrapper">
-                <h1 className="title-headings skill-section text-center">Frontend Tools</h1>
+                <h1 className="title-headings skill-section text-center">
+                    Frontend Tools
+                </h1>
                 <div className="d-flex justify-content-center align-items-center gap-4 flex-wrap">
                     {skills.map((skill) => {
-                        if (skill.type === "frontend") {
-                            return (
-                                <Skills icon={skill.icon} title={skill.name} />
-                            );
-                        }
+                        return skill.type === "frontend" ? (
+                            <Skills icon={skill.icon} title={skill.name} />
+                        ) : null;
                     })}
                 </div>
             </div>
             <div className="py-5 skill-wrapper">
-                <h1 className="title-headings skill-section text-center">Backend Tools</h1>
+                <h1 className="title-headings skill-section text-center">
+                    Backend Tools
+                </h1>
                 <div className="d-flex justify-content-center align-items-center gap-4 flex-wrap">
                     {skills.map((skill) => {
-                        if (skill.type === "backend") {
-                            return (
-                                <Skills icon={skill.icon} title={skill.name} />
-                            );
-                        }
+                        return skill.type === "backend" ? (
+                            <Skills icon={skill.icon} title={skill.name} />
+                        ) : null;
                     })}
                 </div>
             </div>
             <div className="py-5 skill-wrapper">
-                <h1 className="title-headings skill-section text-center">Other Familiar Languages</h1>
+                <h1 className="title-headings skill-section text-center">
+                    Other Familiar Languages
+                </h1>
                 <div className="d-flex justify-content-center align-items-center gap-4 flex-wrap">
                     {skills.map((skill) => {
-                        if (skill.type === "other") {
-                            return (
-                                <Skills icon={skill.icon} title={skill.name} />
-                            );
-                        }
+                        return skill.type === "other" ? (
+                            <Skills icon={skill.icon} title={skill.name} />
+                        ) : null;
                     })}
                 </div>
             </div>
             <div className="py-5 skill-wrapper">
-                <h1 className="title-headings skill-section text-center">Currently Learning</h1>
+                <h1 className="title-headings skill-section text-center">
+                    Currently Learning
+                </h1>
                 <div className="d-flex justify-content-center align-items-center gap-4 flex-wrap">
                     {skills.map((skill) => {
-                        if (skill.type === "current") {
-                            return (
-                                <Skills icon={skill.icon} title={skill.name} />
-                            );
-                        }
+                        return skill.type === "current" ? (
+                            <Skills icon={skill.icon} title={skill.name} />
+                        ) : null;
                     })}
                 </div>
             </div>

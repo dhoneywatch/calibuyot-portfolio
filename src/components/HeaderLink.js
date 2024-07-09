@@ -1,16 +1,11 @@
 import React from "react";
+import { Link, animateScroll } from "react-scroll";
 
-const HeaderLinks = ({ navLink, title }) => {
+const HeaderLinks = ({ title, link }) => {
     return (
-        <a>
-            <a
-                className="nav-link navbar-link"
-                aria-current="page"
-                href={navLink}
-            >
-                {title}
-            </a>
-        </a>
+        <Link to={link} activeClass="active" spy={true} smooth={true} duration={100} offset={-80} className="nav-link py-1">
+            {title}
+        </Link>
     );
 };
 

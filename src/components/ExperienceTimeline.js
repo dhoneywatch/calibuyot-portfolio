@@ -51,7 +51,7 @@ const experiences = [
 
 const ExperienceTimeline = () => {
     return (
-        <div className="timeline pt-5 mt-5">
+        <div className="timeline py-5 mt-5">
             {experiences.map((experience) => {
                 return <ExperienceCheckpoint title={experience.title} company={experience.company} date={experience.date} description={experience.description}/> 
             })}

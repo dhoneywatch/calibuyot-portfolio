@@ -3,7 +3,7 @@ import React from "react";
 
 const Education = () => {
     return (
-        <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center educ-cont pt-5 mt-5">
+        <div className="d-flex flex-column flex-lg-row justify-content-center align-items-center educ-cont py-5 mt-5">
             <div className="educ-title-cont py-2 px-2 ps-lg-3 pe-lg-5">
                 <h1 className="educ-title text-center text-lg-start">Bachelor's Degree</h1>
             </div>

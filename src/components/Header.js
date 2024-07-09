@@ -5,19 +5,19 @@ import HeaderLinks from "./HeaderLink";
 const navLinks = [
     {
         title: "Home",
-        link: "#home",
+        link: "home"
     },
     {
         title: "About",
-        link: "#about",
+        link: "about"
     },
     {
         title: "Projects",
-        link: "#projects",
+        link: "projects"
     },
     {
         title: "Contact",
-        link: "#contact",
+        link: "contact"
     },
 ];
 
@@ -25,13 +25,13 @@ const Header = () => {
     return (
         <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <button class="navbar-brand">
                     <img
                         src={coloredLogo}
                         alt="Dan logo"
                         className="nav-icon"
                     />
-                </a>
+                </button>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -47,11 +47,11 @@ const Header = () => {
                     class="collapse navbar-collapse justify-content-end"
                     id="navbarNav"
                 >
-                    <ul class="navbar-nav gap-1 gap-lg-3 text-center">
+                    <ul class="navbar-nav gap-1 gap-lg-3 align-items-center text-center mb-0">
                         {navLinks.map((nav, index) => {
                             return (
                                 <li className="nav-item" key={index}>
-                                    <HeaderLinks navLink={nav.link} title={nav.title} />
+                                    <HeaderLinks title={nav.title} link={nav.link} />
                                 </li>
                             );
                         })}

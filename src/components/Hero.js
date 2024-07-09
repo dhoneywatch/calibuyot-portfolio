@@ -4,10 +4,11 @@ import imgProfile from "../assets/dan-img-2.png";
 const facebookLink = "https://www.facebook.com/dhone.m.calibuyot/";
 const linkedinLink =
     "https://www.linkedin.com/in/dhone-matthews-calibuyot-1ba83b286";
+const githubLink = "https://github.com/dhoneywatch/";
 
 const Hero = () => {
     return (
-        <div className="shadow-sm py-5">
+        <div className="shadow-sm py-5" id="home">
             <div className="container d-flex flex-column-reverse align-items-center flex-lg-row justify-content-lg-center align-items-lg-center gap-5 py-lg-5 hero-cont">
                 <div className="hero-right-cont">
                     <h4 className="sub-headings text-center text-lg-start">
@@ -33,6 +34,7 @@ const Hero = () => {
                                 href={facebookLink}
                                 target="_blank"
                                 className="hero-icons"
+                                rel="noopener noreferrer"
                             >
                                 <i class="bi bi-facebook"></i>
                             </a>
@@ -40,10 +42,16 @@ const Hero = () => {
                                 href={linkedinLink}
                                 target="_blank"
                                 className="hero-icons"
+                                rel="noopener noreferrer"
                             >
                                 <i class="bi bi-linkedin"></i>
                             </a>
-                            <a href="#" className="hero-icons">
+                            <a
+                                href={githubLink}
+                                target="_blank"
+                                className="hero-icons"
+                                rel="noopener noreferrer"
+                            >
                                 <i class="bi bi-github"></i>
                             </a>
                         </div>

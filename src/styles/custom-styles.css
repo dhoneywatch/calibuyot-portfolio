@@ -146,6 +146,15 @@
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid #f7f9f218;
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.37);
+    transition: all 0.1s linear;
+}
+
+.checkpoint div:hover {
+    background-color: var(--main-white);
+}
+
+.checkpoint div:hover > ul {
+    color: var(--main-black);
 }
 
 .checkpoint:nth-child(odd)::before,
@@ -195,6 +204,184 @@
     color: var(--main-white);
 }
 
+.project-container {
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg, #36363618, #36363600);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid #36363618;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.1s linear;
+    width: 18rem;
+    height: max-content;
+    transition: all 0.25s linear;
+    overflow-x: hidden;
+}
+
+.project-container:hover {
+    transform: scale(1.025);
+}
+
+.project-container::before {
+    content: "";
+    position: absolute;
+    width: 10rem;
+    height: 0.25rem;
+    top: 0;
+    right: 0;
+    background-color: var(--main-color-green);
+    transform: translateX(100%);
+    transition: all 0.25s linear;
+    z-index: -1;
+}
+
+.project-container:hover::before {
+    transform: translateX(0);
+}
+
+.project-container::after {
+    content: "";
+    position: absolute;
+    width: 10rem;
+    height: 0.25rem;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color-green);
+    transform: translateX(-100%);
+    transition: all 0.25s linear;
+    z-index: -1;
+}
+
+.project-container:hover::after {
+    transform: translateX(0);
+}
+
+.project-container .card-img-top {
+    height: 8rem;
+    width: auto;
+    object-fit: cover;
+}
+
+
+.project-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--main-black);
+}
+
+.project-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    color: var(--main-black);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.tags-cont {
+    border: 1px solid var(--main-color-green);
+    border-radius: 0.5rem;
+    width: max-content;
+    height: max-content;
+}
+
+.tags-cont {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: var(--main-color-green);
+}
+
+.tags-wrapper {
+    height: 3.8rem;
+    overflow-y: scroll;
+}
+
+.tags-wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+
+.tags-wrapper::-webkit-scrollbar-thumb {
+    background: var(--main-color-green);
+    border-radius: 10px;
+}
+
+.read-more {
+    width: max-content;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: var(--main-black);
+    cursor: pointer;
+    transition: all 0.15s linear;
+}
+
+.read-more:hover {
+    color: var(--main-color-green);
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-active {
+    display: block;
+}
+
+.modal-inactive {
+    display: none;
+}
+
+.modal-content {
+    background-color: var(--main-white);
+}
+
+.modal-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: var(--main-color-green);
+}
+
+.modal-header {
+    background-color: var(--main-black);
+    justify-content: space-between;
+}
+
+.modal-text {
+    font-family: "Roboto", sans-serif;
+    color: var(--main-black);
+    font-size: 0.85rem;
+    text-align: justify;
+}
+
+.close-button {
+    background-color: unset;
+    border: none;
+    color: var(--main-color-green);
+    font-size: 1.5rem;
+    transition: all 0.15s linear;
+}
+
+.close-button:hover {
+    color: var(--main-white);
+    transform: scale(1.1);
+}
+
+.close-button:active {
+    color: var(--main-white);
+    transform: scale(0.99);
+}
+
+.slider-card p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: var(--main-black);
+}
+
 @media screen and (max-width: 768px) {
     .timeline::before {
         left: 10%;
@@ -242,7 +429,7 @@
     .checkpoint:nth-child(odd)::before {
         display: none;
     }
-    
+
     .checkpoint:nth-child(even)::before {
         display: none;
     }
