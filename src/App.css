@@ -63,6 +63,11 @@ body {
     z-index: 1;
 }
 
+.navbar-brand {
+    background-color: unset;
+    border: none;
+}
+
 .nav-icon {
     height: 1.7rem;
     width: auto;
@@ -73,15 +78,23 @@ body {
     transform: rotate(-5deg) scale(1.1);
 }
 
-.navbar-link {
-    color: var(--main-black);
+.nav-link {
+    color: var(--main-black) !important;
     font-weight: 700;
     font-size: 1rem;
-    transition: 0.25s ease-in-out;
+    cursor: pointer;
+    width: max-content;
+    border-bottom: 3px solid transparent;
 }
 
-.navbar-link:hover {
-    color: var(--main-color-green);
+.nav-item a:hover {
+    color: var(--main-color-green) !important;
+    border-bottom: 3px solid var(--main-color-green);
+}
+
+.nav-item > .active {
+    color: var(--main-color-green) !important;
+    border-bottom: 3px solid var(--main-color-green);
 }
 
 /* Hero Component */
@@ -123,6 +136,10 @@ body {
 }
 
 .about-title {
+    color: var(--main-color-green);
+}
+
+.about-desc {
     color: var(--main-color-green);
 }
 
@@ -203,6 +220,11 @@ body {
     width: inherit;
     border-bottom: 1px solid var(--main-white);
     border-radius: 1rem;
+}
+
+/* Projects Components */
+.projects-headings {
+    color: var(--main-black);
 }
 
 /* Custom Responsiveness */
