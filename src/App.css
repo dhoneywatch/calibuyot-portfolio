@@ -60,7 +60,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .navbar-brand {
@@ -122,6 +122,10 @@ body {
     color: var(--main-color-green);
 }
 
+.hero-name span {
+    color: var(--main-black);
+}
+
 .hero-cont {
     padding: 0 10rem;
 }
@@ -132,6 +136,10 @@ body {
 }
 
 .about-headings {
+    color: var(--main-white);
+}
+
+.about-headings span {
     color: var(--main-color-green);
 }
 
@@ -140,7 +148,12 @@ body {
 }
 
 .about-desc {
+    color: var(--main-white);
+}
+
+.about-desc span {
     color: var(--main-color-green);
+    font-weight: 600;
 }
 
 .about-subheadings {
@@ -153,6 +166,12 @@ body {
 
 .about-text {
     color: var(--main-white);
+}
+
+.about-hr {
+    height: 3px;
+    width: 15%;
+    background-color: var(--main-color-green);
 }
 
 .educ-cont {
@@ -225,6 +244,71 @@ body {
 /* Projects Components */
 .projects-headings {
     color: var(--main-black);
+}
+
+.projects-headings span {
+    color: var(--main-color-green);
+}
+
+.projects-subtitle {
+    color: var(--main-black);
+}
+
+.projects-subtitle span {
+    color: var(--main-color-green);
+    font-weight: 600;
+}
+
+.projects-hr {
+    height: 3px;
+    width: 15%;
+    background-color: var(--main-color-green);
+}
+
+/* Contacts Components */
+.contact-section {
+    background-color: var(--main-color-green);
+}
+
+.contact-title {
+    color: var(--main-white);
+}
+
+.contact-title span {
+    color: var(--main-black);
+}
+
+.contact-desc {
+    color: var(--main-white);
+}
+
+.contact-icon {
+    color: var(--main-black);
+    font-size: 1.25rem;
+}
+
+.contact-hr {
+    height: 3px;
+    width: 30%;
+    background-color: var(--main-black);
+}
+
+.contact-section input, .contact-section textarea {
+    background-color: unset;
+    border: unset;
+    border: 2px solid var(--main-white);
+    color: var(--main-white);
+}
+
+.contact-section input:focus, .contact-section textarea:focus {
+    background-color: unset;
+    color: var(--main-white);
+    border: 3px solid var(--main-white);
+    box-shadow: none;
+}
+
+.contact-section textarea {
+    resize: none;
 }
 
 /* Custom Responsiveness */

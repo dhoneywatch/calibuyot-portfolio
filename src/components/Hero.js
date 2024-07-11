@@ -8,14 +8,14 @@ const githubLink = "https://github.com/dhoneywatch/";
 
 const Hero = () => {
     return (
-        <div className="shadow-sm py-5" id="home">
+        <section className="shadow-sm py-5" id="home">
             <div className="container d-flex flex-column-reverse align-items-center flex-lg-row justify-content-lg-center align-items-lg-center gap-5 py-lg-5 hero-cont">
                 <div className="hero-right-cont">
                     <h4 className="sub-headings text-center text-lg-start">
                         Hello there! I am...
                     </h4>
                     <h1 className="headings text-center text-lg-start hero-name">
-                        Dhone Matthews
+                        Dhone <span>Matthews</span>
                     </h1>
                     <p className="normal-text text-center text-lg-start">
                         I want to gain experiences and skills to expand my
@@ -65,7 +65,7 @@ const Hero = () => {
                     />
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
