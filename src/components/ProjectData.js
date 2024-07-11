@@ -8,6 +8,8 @@ import radBook from "../assets/radappoint/booking-page.png";
 import radPortal from "../assets/radappoint/internal-portal.png";
 import radRegister from "../assets/radappoint/patient-register.png";
 import radAppointments from "../assets/radappoint/patient-appointment-list.png";
+import confPaper from "../assets/conference/feature-names.png";
+import confPublication from "../assets/conference/feature-conf.png";
 
 const projects = [
     {
@@ -75,9 +77,14 @@ const projects = [
         text: "The study entitled, \"Feature Selection Techniques Applied to Voice-Based Prediction of Parkinson's Disease\" is a machine learning project co-authored with Vincent Peter Magboo, M.Sc., M.D., Emmanuel Ednalan, and Nathaniel Ortega. This work is currently considered for the 2024 Fifteenth International Conference on Ubiquitous and Future Networks. The project focuses on enhancing the accuracy of Parkinson's Disease prediction through the application of feature selection techniques to vocal data, aiming to identify key vocal features that serve as reliable indicators for early diagnosis and intervention.",
         tags: ["Machine Learning", "Python"],
         img: [{
-            src: portfolioHome,
-            caption: "Dhone's portfolio - Home page"
-        }]
+            src: confPaper,
+            caption: "Paper Title and Authors"
+        },
+        {
+            src: confPublication,
+            caption: "2024 Fifteenth International Conference on Ubiquitous and Future Networks (ICUFN)"
+        }
+    ]
     },
 ];
 

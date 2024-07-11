@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Projects from "./Projects";
 import ProjectModal from "./ProjectModal";
-import projects from "../assets/ProjectData";
+import projects from "./ProjectData";
 
 const ProjectsSection = () => {
     const [modal, setModal] = useState(false);
