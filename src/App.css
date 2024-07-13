@@ -66,6 +66,7 @@ body {
 .navbar-brand {
     background-color: unset;
     border: none;
+    cursor: pointer;
 }
 
 .nav-icon {

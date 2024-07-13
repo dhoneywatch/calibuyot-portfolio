@@ -72,11 +72,13 @@ const SkillsList = () => {
                     Frontend Tools
                 </h1>
                 <div className="d-flex justify-content-center align-items-center gap-4 flex-wrap">
-                    {skills.map((skill) => {
-                        return skill.type === "frontend" ? (
-                            <Skills icon={skill.icon} title={skill.name} />
-                        ) : null;
-                    })}
+                {skills
+                        .filter((skill) => skill.type === "frontend")
+                        .map((skill) => {
+                            return (
+                                <Skills icon={skill.icon} title={skill.name} />
+                            );
+                        })}
                 </div>
             </div>
             <div className="py-5 skill-wrapper">
@@ -84,11 +86,13 @@ const SkillsList = () => {
                     Backend Tools
                 </h1>
                 <div className="d-flex justify-content-center align-items-center gap-4 flex-wrap">
-                    {skills.map((skill) => {
-                        return skill.type === "backend" ? (
-                            <Skills icon={skill.icon} title={skill.name} />
-                        ) : null;
-                    })}
+                    {skills
+                        .filter((skill) => skill.type === "backend")
+                        .map((skill) => {
+                            return (
+                                <Skills icon={skill.icon} title={skill.name} />
+                            );
+                        })}
                 </div>
             </div>
             <div className="py-5 skill-wrapper">
@@ -96,11 +100,13 @@ const SkillsList = () => {
                     Other Familiar Languages
                 </h1>
                 <div className="d-flex justify-content-center align-items-center gap-4 flex-wrap">
-                    {skills.map((skill) => {
-                        return skill.type === "other" ? (
-                            <Skills icon={skill.icon} title={skill.name} />
-                        ) : null;
-                    })}
+                {skills
+                        .filter((skill) => skill.type === "other")
+                        .map((skill) => {
+                            return (
+                                <Skills icon={skill.icon} title={skill.name} />
+                            );
+                        })}
                 </div>
             </div>
             <div className="py-5 skill-wrapper">
@@ -108,11 +114,13 @@ const SkillsList = () => {
                     Currently Learning
                 </h1>
                 <div className="d-flex justify-content-center align-items-center gap-4 flex-wrap">
-                    {skills.map((skill) => {
-                        return skill.type === "current" ? (
-                            <Skills icon={skill.icon} title={skill.name} />
-                        ) : null;
-                    })}
+                {skills
+                        .filter((skill) => skill.type === "current")
+                        .map((skill) => {
+                            return (
+                                <Skills icon={skill.icon} title={skill.name} />
+                            );
+                        })}
                 </div>
             </div>
         </div>
