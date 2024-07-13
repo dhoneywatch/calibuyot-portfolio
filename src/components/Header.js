@@ -1,6 +1,7 @@
 import React from "react";
 import coloredLogo from "../assets/logo-colored.png";
 import HeaderLinks from "./HeaderLink";
+import { Link } from "react-scroll";
 
 const navLinks = [
     {
@@ -25,13 +26,13 @@ const Header = () => {
     return (
         <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 shadow-sm">
             <div class="container">
-                <button class="navbar-brand">
+                <Link to="home" smooth={true} duration={100} offset={-80} class="navbar-brand">
                     <img
                         src={coloredLogo}
                         alt="Dan logo"
                         className="nav-icon"
                     />
-                </button>
+                </Link>
                 <button
                     class="navbar-toggler"
                     type="button"
