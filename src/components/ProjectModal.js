@@ -1,7 +1,5 @@
 import React from "react";
 import Tags from "./Tags";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const ProjectModal = ({ toggleModal, hideModal, title, desc, tags, images }) => {
@@ -17,7 +15,7 @@ const ProjectModal = ({ toggleModal, hideModal, title, desc, tags, images }) => 
 
     const settings = {
         dots: true,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -39,7 +37,8 @@ const ProjectModal = ({ toggleModal, hideModal, title, desc, tags, images }) => 
                         </button>
                     </div>
                     <div class="modal-body">
-                        <Slider {...settings}>
+                        {
+                            imageList.length !== 1 ? <Slider {...settings}>
                             {imageList.map((image) => {
                                 return (
                                     <div className="slider-card">
@@ -52,7 +51,16 @@ const ProjectModal = ({ toggleModal, hideModal, title, desc, tags, images }) => 
                                     </div>
                                 );
                             })}
-                        </Slider>
+                        </Slider> : <div className="slider-card">
+                                        <img
+                                            src={images[0].src}
+                                            alt="..."
+                                            className="card-img-top"
+                                        />
+                                        <p className="text-center mb-0 pt-2">{images[0].caption}</p>
+                                    </div>
+                        }
+                        
                         <p className="modal-text pt-5">{desc}</p>
                         <div className="d-flex justify-content-center align-items-center gap-2 flex-wrap">
                             {tagList.map((tag) => {

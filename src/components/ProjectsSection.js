@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Projects from "./Projects";
 import ProjectModal from "./ProjectModal";
 import projects from "./ProjectData";
+import Slider from "react-slick";
 
 const ProjectsSection = () => {
     const [modal, setModal] = useState(false);
@@ -18,6 +19,30 @@ const ProjectsSection = () => {
         return modal === true ? "modal modal-active" : "modal";
     };
 
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        centerMode: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }, 
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1, 
+                }
+            }
+        ]
+      };
+
     return (
         <section className="py-5" id="projects">
             <div className="container py-5">
@@ -33,7 +58,8 @@ const ProjectsSection = () => {
                     <span>capabilities</span> and the <span>range</span> of work
                     I've completed.
                 </p>
-                <div className="py-5 d-flex justify-content-center align-items-center gap-4 flex-wrap">
+                <div className="carousel py-5">
+                    <Slider {...settings}>
                     {projects.map((project) => {
                         return (
                             <Projects
@@ -52,6 +78,7 @@ const ProjectsSection = () => {
                             />
                         );
                     })}
+                    </Slider>
                 </div>
             </div>
             <ProjectModal
