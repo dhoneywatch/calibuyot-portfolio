@@ -1,5 +1,6 @@
 import React from "react";
 import imgProfile from "../assets/dan-img-2.png";
+import Resume from "../assets/resume/Calibuyot_Resume.pdf";
 
 const facebookLink = "https://www.facebook.com/dhone.m.calibuyot/";
 const linkedinLink =
@@ -26,7 +27,7 @@ const Hero = () => {
                         <button className="button button-fill-dark">
                             <div className="d-flex align-items-center gap-2">
                                 <i className="bi bi-download"></i>
-                                <p className="button-text">Download CV</p>
+                                <a className="button-text" href={Resume} download="Calibuyot_Dhone Matthews_Resume">Download CV</a>
                             </div>
                         </button>
                         <div className="d-flex gap-5">
