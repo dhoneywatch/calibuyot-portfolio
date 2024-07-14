@@ -418,7 +418,21 @@ label {
     color: var(--main-black);
 }
 
-@media screen and (max-width: 768px) {
+.slick-prev:before,
+.slick-next:before {
+  color: var(--main-color-green) !important;
+}
+
+.carousel .slick-slide div {
+    display: flex;
+    justify-content: center;
+}
+.carousel .slick-track {
+    height: 30rem;
+    padding-top: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
     .timeline::before {
         left: 10%;
     }
@@ -446,6 +460,15 @@ label {
     .tab-button {
         width: 6rem;
         font-size: 0.8rem;
+    }
+
+    .slick-next {
+        right: -8px !important;
+    }
+
+    .slick-prev {
+        left: -8px !important;
+        z-index: 1;
     }
 }
 
