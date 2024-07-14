@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/calibuyot-portfolio/static/css/main.83acf361.css",
+    "main.js": "/calibuyot-portfolio/static/js/main.ca7f7e45.js",
+    "static/media/landing.jpg": "/calibuyot-portfolio/static/media/landing.47695eb7f22912f8bdb9.jpg",
+    "static/media/login.jpg": "/calibuyot-portfolio/static/media/login.77d653c168585d11004c.jpg",
+    "static/media/records.jpg": "/calibuyot-portfolio/static/media/records.02e1ab1a5c4b46807248.jpg",
+    "static/media/output.jpg": "/calibuyot-portfolio/static/media/output.2911d22915e4acd0f2bc.jpg",
+    "static/media/dan-img-2.png": "/calibuyot-portfolio/static/media/dan-img-2.419ecdcef63ad48b08c0.png",
+    "static/media/input.jpg": "/calibuyot-portfolio/static/media/input.f6780b561f802ce38c68.jpg",
+    "static/media/feature-conf.png": "/calibuyot-portfolio/static/media/feature-conf.4f660a2423d7ac9bb34a.png",
+    "static/media/tracker.jpg": "/calibuyot-portfolio/static/media/tracker.a1bc65116a239f27e67e.jpg",
+    "static/media/portfolio-homepage.png": "/calibuyot-portfolio/static/media/portfolio-homepage.25dc3127a418716d9688.png",
+    "static/media/edit.jpg": "/calibuyot-portfolio/static/media/edit.dfa19ce4bab147cbdded.jpg",
+    "static/media/view.jpg": "/calibuyot-portfolio/static/media/view.f5ad24a256004577e4a4.jpg",
+    "static/media/home-page-2.png": "/calibuyot-portfolio/static/media/home-page-2.b280cff87ab959f6494d.png",
+    "static/media/create.jpg": "/calibuyot-portfolio/static/media/create.355a4b72dad340507ad1.jpg",
+    "static/media/generate.jpg": "/calibuyot-portfolio/static/media/generate.d2ee46beb4a24f8ece91.jpg",
+    "static/media/Calibuyot_Resume.pdf": "/calibuyot-portfolio/static/media/Calibuyot_Resume.8aa0441c26975fac3ac9.pdf",
+    "static/media/feature-names.png": "/calibuyot-portfolio/static/media/feature-names.7c428b0a35638f33a91a.png",
+    "static/media/home-page.png": "/calibuyot-portfolio/static/media/home-page.c57f5c113585fce2fa22.png",
+    "static/media/sample-input.png": "/calibuyot-portfolio/static/media/sample-input.1a754ff8a23fa8bef356.png",
+    "static/media/booking-page.png": "/calibuyot-portfolio/static/media/booking-page.b69fb6564a529368ac59.png",
+    "static/media/sample-output.png": "/calibuyot-portfolio/static/media/sample-output.c120c188a922d07e0d41.png",
+    "static/media/internal-portal.png": "/calibuyot-portfolio/static/media/internal-portal.4aecf969d1a0563513e9.png",
+    "static/media/patient-login.png": "/calibuyot-portfolio/static/media/patient-login.2646a8adbff5f2e420b3.png",
+    "static/media/logo-colored.png": "/calibuyot-portfolio/static/media/logo-colored.cec979366a2e5d3991de.png",
+    "static/media/patient-register.png": "/calibuyot-portfolio/static/media/patient-register.947643cc1afb3911337e.png",
+    "static/media/patient-appointment-list.png": "/calibuyot-portfolio/static/media/patient-appointment-list.59b38cb87e93cf7cd396.png",
+    "static/media/slick.svg": "/calibuyot-portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/calibuyot-portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/calibuyot-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "index.html": "/calibuyot-portfolio/index.html",
+    "static/media/slick.woff": "/calibuyot-portfolio/static/media/slick.295183786cd8a1389865.woff",
+    "main.83acf361.css.map": "/calibuyot-portfolio/static/css/main.83acf361.css.map",
+    "main.ca7f7e45.js.map": "/calibuyot-portfolio/static/js/main.ca7f7e45.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83acf361.css",
+    "static/js/main.ca7f7e45.js"
+  ]
+}
