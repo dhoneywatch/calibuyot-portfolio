@@ -6,7 +6,7 @@ const Skills = ({ icon, title }) => {
             <div className="skill-icon">
                 <i class={icon}></i>
             </div>
-            <h1 className="skill-headings skill-title mb-0">{title}</h1>
+            <h1 className="skill-headings skill-title mb-0 text-center">{title}</h1>
         </div>      
     );
 };
