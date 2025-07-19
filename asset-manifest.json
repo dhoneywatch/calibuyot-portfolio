@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/calibuyot-portfolio/static/css/main.83acf361.css",
-    "main.js": "/calibuyot-portfolio/static/js/main.9fee2d5e.js",
+    "main.js": "/calibuyot-portfolio/static/js/main.838cbfa7.js",
     "static/media/landing.jpg": "/calibuyot-portfolio/static/media/landing.47695eb7f22912f8bdb9.jpg",
     "static/media/login.jpg": "/calibuyot-portfolio/static/media/login.77d653c168585d11004c.jpg",
     "static/media/records.jpg": "/calibuyot-portfolio/static/media/records.02e1ab1a5c4b46807248.jpg",
@@ -11,7 +11,7 @@
     "static/media/feature-conf.png": "/calibuyot-portfolio/static/media/feature-conf.4f660a2423d7ac9bb34a.png",
     "static/media/tracker.jpg": "/calibuyot-portfolio/static/media/tracker.a1bc65116a239f27e67e.jpg",
     "static/media/portfolio-homepage.png": "/calibuyot-portfolio/static/media/portfolio-homepage.25dc3127a418716d9688.png",
-    "static/media/Calibuyot_Resume.pdf": "/calibuyot-portfolio/static/media/Calibuyot_Resume.274db3d3ffcec2108ce4.pdf",
+    "static/media/Calibuyot_Resume.pdf": "/calibuyot-portfolio/static/media/Calibuyot_Resume.229e254bcf841dc3e3e9.pdf",
     "static/media/edit.jpg": "/calibuyot-portfolio/static/media/edit.dfa19ce4bab147cbdded.jpg",
     "static/media/view.jpg": "/calibuyot-portfolio/static/media/view.f5ad24a256004577e4a4.jpg",
     "static/media/home-page-2.png": "/calibuyot-portfolio/static/media/home-page-2.b280cff87ab959f6494d.png",
@@ -33,10 +33,10 @@
     "index.html": "/calibuyot-portfolio/index.html",
     "static/media/slick.woff": "/calibuyot-portfolio/static/media/slick.295183786cd8a1389865.woff",
     "main.83acf361.css.map": "/calibuyot-portfolio/static/css/main.83acf361.css.map",
-    "main.9fee2d5e.js.map": "/calibuyot-portfolio/static/js/main.9fee2d5e.js.map"
+    "main.838cbfa7.js.map": "/calibuyot-portfolio/static/js/main.838cbfa7.js.map"
   },
   "entrypoints": [
     "static/css/main.83acf361.css",
-    "static/js/main.9fee2d5e.js"
+    "static/js/main.838cbfa7.js"
   ]
 }
