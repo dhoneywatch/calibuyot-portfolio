@@ -3,6 +3,17 @@ import ExperienceCheckpoint from "./ExperienceCheckpoint";
 
 const experiences = [
     {
+        title: "Jr. Software Developer",
+        company: "PwC Philippines",
+        date: "(September 2024 - Present)",
+        description: [
+            "Implements user interfaces based on specifications provided by the Design Analyst.",
+            "Develops and maintains APIs to support frontend functionality and data integration.",
+            "Integrates frontend components with backend services for seamless application performance.",
+            "Troubleshoots and resolves frontend issues to enhance performance and user experience."
+        ],
+    },
+    {
         title: "Web Designer Intern",
         company: "Technomancer Inc.",
         date: "(June 2023 - August 2023)",

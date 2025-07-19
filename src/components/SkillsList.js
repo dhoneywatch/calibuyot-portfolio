@@ -4,6 +4,16 @@ import Skills from "./Skills";
 const skills = [
     {
         type: "frontend",
+        icon: "fa-brands fa-react",
+        name: "Next.JS",
+    },
+    {
+        type: "frontend",
+        icon: "fa-brands fa-react",
+        name: "React",
+    },
+    {
+        type: "frontend",
         icon: "fa-brands fa-html5",
         name: "HTML",
     },
@@ -34,8 +44,8 @@ const skills = [
     },
     {
         type: "backend",
-        icon: "fa-brands fa-python",
-        name: "Flask",
+        icon: "fa-solid fa-database",
+        name: "SQL",
     },
     {
         type: "other",
@@ -46,11 +56,6 @@ const skills = [
         type: "other",
         icon: "fa-brands fa-r-project",
         name: "R",
-    },
-    {
-        type: "current",
-        icon: "fa-brands fa-react",
-        name: "React",
     },
     {
         type: "current",
@@ -109,7 +114,7 @@ const SkillsList = () => {
                         })}
                 </div>
             </div>
-            <div className="py-5 skill-wrapper">
+            {/* <div className="py-5 skill-wrapper">
                 <h1 className="title-headings skill-section text-center">
                     Currently Learning
                 </h1>
@@ -122,7 +127,7 @@ const SkillsList = () => {
                             );
                         })}
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

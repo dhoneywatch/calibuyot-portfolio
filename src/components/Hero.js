@@ -19,9 +19,8 @@ const Hero = () => {
                         Dhone <span>Matthews</span>
                     </h1>
                     <p className="normal-text text-center text-lg-start">
-                        I want to gain experiences and skills to expand my
-                        knowledge about the ever-improving technology,
-                        particularly in but not limited to Software Development.
+                    A Software Developer with one year of experience, passionate about building web 
+                    applications and continuously growing in the tech industry.
                     </p>
                     <div className="d-flex flex-column flex-sm-row justify-content-start align-items-center gap-3 gap-sm-5 mt-4 mt-sm-5">
                         <button className="button button-fill-dark">
