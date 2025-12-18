@@ -7,6 +7,7 @@ const experiences = [
         company: "PwC Philippines",
         date: "(September 2024 - Present)",
         description: [
+            "Acts as an interim Business Analyst",
             "Implements user interfaces based on specifications provided by the Design Analyst.",
             "Develops and maintains APIs to support frontend functionality and data integration.",
             "Integrates frontend components with backend services for seamless application performance.",
